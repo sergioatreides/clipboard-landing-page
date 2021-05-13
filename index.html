@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <title>Frontend Mentor | Clipboard landing page</title>
+  <script src="https://kit.fontawesome.com/0c29b597aa.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -143,7 +143,7 @@
         <h2>Clipboard for iOS and Mac OS</h2>
       </header>
 
-      <p class="parrafo">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
+      <p class="parrafo p-clipboard-ios">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
 
       <!-- Esto será un flexbox para poner en horizontal ambos botones, idéntico al de la primera sección (cabecera) -->
       <div class="botonera-descarga">
@@ -154,14 +154,25 @@
 
     <!----------------    6. MENU    ------------------>
 
+    <!-- -->
     <nav class="menu-pie">
-      <ul>
-        <li>FAQs</li>
-        <li>Contact Us</li>
-        <li>Privacy Policy</li>
-        <li>Press Kit</li>
-        <li>Install Guide</li>
-      </ul>
+
+      <img class="logo-pie" src="images/logo.svg" alt="Logo Clipboard"> 
+
+      <div class="contenedor-menu">
+        <p class="parrafo p-menu">FAQs</p>
+        <p class="parrafo p-menu">Contact Us</p>
+        <p class="parrafo p-menu">Privacy Policy</p>
+        <p class="parrafo p-menu">Press Kit</p>
+        <p class="parrafo p-menu">Install Guide</p>
+      </div>
+
+      <div class="social-icons">
+        <i class="fab fa-facebook social-icons__ico"></i>
+        <i class="fab fa-twitter social-icons__ico"></i>
+        <i class="fab fa-instagram social-icons__ico"></i>
+      </div>
+
     </nav>
 
   </main>

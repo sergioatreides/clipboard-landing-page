@@ -11,6 +11,7 @@
     --dark-grayish-blue: hsl(210, 10%, 33%);
     --grayish-blue: hsl(201, 11%, 66%);
     --white: hsl(0, 0%, 100%);
+    --bluish-white: hsl(220, 17%, 96%);
 }
 * {
     box-sizing: border-box;
@@ -76,7 +77,8 @@ h2 {
     width: 75px;
     margin-bottom: 30px;
 }
-.p-cabecera {
+.p-cabecera,
+.p-clipboard-ios {
     width: 70%;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -172,24 +174,75 @@ h2 {
     border-color: var(--strong-cyan-shadow);
     margin-right: 5px;
 }
-.b-download-ios:active {
+.b-download-ios:active,
+.b-download-ios:hover {
     background-color: var(--strong-cyan-active);
     border-color: var(--strong-cyan-shadow-active);
+    cursor: pointer;
 }
 .b-download-mac {
     background-color: var(--light-blue);
     border-color: var(--light-blue-shadow);
     margin-left: 5px;
 }
-.b-download-mac:active {
+.b-download-mac:active,
+.b-download-mac:hover {
     background-color: var(--light-blue-active);
     border-color: var(--light-blue-shadow-active);
-    margin-left: 5px;
+    cursor: pointer;
 }
 
+/* -------------   MENU-PIE    ----------- */
 
-
-
+.menu-pie {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    /* height: 80%; */
+    margin-top: 40px;
+    margin-bottom: 30px;
+    background-color: var(--bluish-white);
+}
+.contenedor-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-icons__ico {
+    font-size: 1.2em;
+    color: var(--dark-grayish-blue);
+}
+.social-icons__ico:active,
+.social-icons__ico:hover {
+    color: var(--strong-cyan-active);
+    cursor: pointer;
+}
+.logo-pie {
+    height: 40px;
+    width: 40px;
+    justify-self: center;
+    align-self: center;
+}
+.p-menu {
+    margin-left: 0;
+}
+.p-menu:active,
+.p-menu:hover {
+    color: var(--strong-cyan-active);
+    cursor: pointer;
+}
 
 
 
@@ -198,7 +251,8 @@ h2 {
 
 .attribution { 
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
+    margin-bottom: 40px; 
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
