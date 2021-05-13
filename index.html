@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <main>
+  <main class="contenedor">
 
     <!----------------    CABECERA    ------------------>
     
@@ -24,12 +24,12 @@
         <h1>A history of everything you copy</h1>
       </header>
 
-      <p class="paragrafo">Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
+      <p class="paragrafo p-cabecera">Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
 
       <!-- Esto será un flexbox para poner en horizontal ambos botones -->
       <div class="botonera-descarga">
-        <button class="boton download-ios">Download for iOS</button>
-        <button class="boton download-mac">Download for Mac</button>
+        <button class="boton b-download-ios">Download for iOS</button>
+        <button class="boton b-download-mac">Download for Mac</button>
       </div>
 
     </section>
@@ -42,22 +42,31 @@
         <h2>Keep track of your snippets</h2>
       </header>
       
-      <p class="paragrafo">Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
+      <p class="paragrafo p-keep-track">Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
 
       <!-- Esto será un flexbox para poner en horizontal ambos divs (imagen a la izquierda y características a la derecha)-->
       <div class="keep-track__cloud">
 
         <img class="keep-track__cloud-image" src="images/image-computer.png" alt="Cloud storage features">
+        
         <div class="keep-track__cloud-features">
-          <h3>Quick Search</h3>
-          <p class="paragrafo">Easily search your snippets by content, category, web address, application, and more.</p>
 
-          <h3>iCloud Sync</h3>
-          <p class="paragrafo">Instantly saves and syncs snippets across all your devices.</p>
+          <!-- Esto será otro flexbox para poner en vertical las 3 características con sus tres descripciones (daría un poco igual hacerlo con grid) -->
+          <div class="keep-track__cloud-features-feature">
+            <h3>Quick Search</h3>
+            <p class="paragrafo">Easily search your snippets by content, category, web address, application, and more.</p>
+          </div>
+          <div class="keep-track__cloud-features-feature">
+            <h3>iCloud Sync</h3>
+            <p class="paragrafo">Instantly saves and syncs snippets across all your devices.</p>
+          </div>
+          <div>
+            <h3>Complete History</h3>
+            <p class="paragrafo">Retrieve any snippets from the first moment you started using the app.</p>
+          </div>
 
-          <h3>Complete History</h3>
-          <p class="paragrafo">Retrieve any snippets from the first moment you started using the app.</p>
         </div>
+
       </div>
 
     </section>
@@ -126,8 +135,8 @@
 
       <!-- Esto será un flexbox para poner en horizontal ambos botones, idéntico al de la primera sección (cabecera) -->
       <div class="botonera-descarga">
-        <button class="boton download-ios">Download for iOS</button>
-        <button class="boton download-mac">Download for Mac</button>
+        <button class="boton b-download-ios">Download for iOS</button>
+        <button class="boton b-download-mac">Download for Mac</button>
       </div>
     </section>
 
