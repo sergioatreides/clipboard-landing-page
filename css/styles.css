@@ -264,7 +264,88 @@ h2 {
         background-repeat: no-repeat;
         background-size: contain;
     }
+    .parrafo {
+        width: 85%;
+    }
     .contenedor {
         width: 90%;
+        grid-gap: 10vh;
+        margin-top: 5vh;
+    }
+    .keep-track__cloud {
+        flex-direction: column;   
+        justify-content: center;     
+    }
+    .keep-track__cloud-image {
+        width: 85%;
+        transform: none;
+        margin-bottom: 45px;
+    }
+    .keep-track__cloud-features {
+        margin-left: 0;
+        margin-right: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .keep-track__cloud-features-feature {
+        margin-bottom: 40px;
+    }
+    .access-clipboard__image {
+        margin-top: 20px;
+        width: 85%;
+    }
+
+    /* ----------   SECCION SUPERCHARGE   -----------*/
+
+    .supercharge__features {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .supercharge__features-feature {
+        margin-bottom: 20px;
+    }
+    .supercharge__corporate-logos {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        margin-top: 10px;
+        align-content: space-around;
+    }
+    .supercharge__corporate-logos img {
+        margin-bottom: 40px;
+    }
+
+    /* -------------   MENU-PIE    ----------- */
+
+    .menu-pie {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        /* width: 100%;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        background-color: var(--bluish-white); */
+    }
+    .contenedor-menu {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        justify-content: center;
+        /* width: 100%;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px; */
+    }
+    .p-menu {
+        text-align: center;
+        margin: 5px 0px 5px 0px;
+        width: 100%;
+    }
+
+    /* ------------    BOTONERA    ------------- */
+
+    .boton {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
