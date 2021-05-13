@@ -244,10 +244,7 @@ h2 {
     cursor: pointer;
 }
 
-
-
-
-
+/* -------------   ATRIBUCIÓN    ----------- */
 
 .attribution { 
     font-size: 11px; 
@@ -256,4 +253,18 @@ h2 {
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+/* -----------   MEDIA QUERIES    --------- */
+
+@media screen and (max-width: 850px) {
+    body {
+        background-image: url("../images/bg-header-mobile.png");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .contenedor {
+        width: 90%;
+    }
 }
