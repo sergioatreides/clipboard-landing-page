@@ -13,75 +13,144 @@
 <body>
 
   <main>
-    <section class="seccion cabecera">
-      A history of everything you copy
 
-      Clipboard allows you to track and organize everything you 
-      copy. Instantly access your clipboard on all your devices.
-
-      Download for iOS
-      Download for Mac
-    </section>
-    <section class="seccion keep-track">
-      Keep track of your snippets
-
-      Clipboard instantly stores any item you copy in the cloud, 
-      meaning you can access your snippets immediately on all your 
-      devices. Our Mac and iOS apps will help you organize everything.
-
-      Quick Search
-
-      Easily search your snippets by content, category, web address, application, and more.
-
-      iCloud Sync
+    <!----------------    CABECERA    ------------------>
     
-      Instantly saves and syncs snippets across all your devices.
+    <section class="seccion cabecera">
+      
+      <img class="logo-cabecera" src="images/logo.svg" alt="Logo Clipboard">
 
-      Complete History
+      <header>
+        <h1>A history of everything you copy</h1>
+      </header>
 
-      Retrieve any snippets from the first moment you started using the app.
+      <p class="paragrafo">Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
+
+      <!-- Esto será un flexbox para poner en horizontal ambos botones -->
+      <div class="botonera-descarga">
+        <button class="boton download-ios">Download for iOS</button>
+        <button class="boton download-mac">Download for Mac</button>
+      </div>
+
     </section>
+
+    <!----------------    KEEP-TRACK    ------------------>
+
+    <section class="seccion keep-track">
+
+      <header>
+        <h2>Keep track of your snippets</h2>
+      </header>
+      
+      <p class="paragrafo">Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
+
+      <!-- Esto será un flexbox para poner en horizontal ambos divs (imagen a la izquierda y características a la derecha)-->
+      <div class="keep-track__cloud">
+
+        <img class="keep-track__cloud-image" src="images/image-computer.png" alt="Cloud storage features">
+        <div class="keep-track__cloud-features">
+          <h3>Quick Search</h3>
+          <p class="paragrafo">Easily search your snippets by content, category, web address, application, and more.</p>
+
+          <h3>iCloud Sync</h3>
+          <p class="paragrafo">Instantly saves and syncs snippets across all your devices.</p>
+
+          <h3>Complete History</h3>
+          <p class="paragrafo">Retrieve any snippets from the first moment you started using the app.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!----------------    ACCESS-CLIPBOARD    ------------------>
+
     <section class="seccion access-clipboard">
-      Access Clipboard anywhere
 
-      Whether you’re on the go, or at your computer, you can access all your Clipboard 
-      snippets in a few simple clicks.
+      <header>
+        <h2>Access Clipboard anywhere</h2>
+      </header>
+
+      <p class="paragrafo">Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
+
+      <img class="access-clipboard__image" src="images/image-devices.png" alt="Access Clipboard anywhere">
+
     </section>
-    Supercharge your workflow
 
-    We’ve got the tools to boost your productivity.
+    <!----------------    SUPERCHARGE    ------------------>
 
-    Create blacklists
+    <section class="seccion supercharge">
+      
+      <header>
+        <h2>Supercharge your workflow</h2>
+      </header>
 
-    Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
+      <p class="paragrafo">We’ve got the tools to boost your productivity.</p>
 
-    Plain text snippets
+      <!-- Esto será un grid horizontal de tres columnas x 1 fila para meter tres flexboxes, cada uno dentro de cada columna, y que estos muestren su contenido verticalmente-->
+      <div class="supercharge__features">
 
-    Remove unwanted formatting from copied text for a consistent look.
+        <!-- Flexbox 1 -->
+        <div class="supercharge__features-feature1">
+          <img class="supercharge__features-feature1-icon" alt="Create blacklists">
+          <h3>Create blacklists</h3>
+          Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+        </div>
 
-    Sneak preview
+        <!-- Flexbox 2 -->
+        <div class="supercharge__features-feature2">
+          <img class="supercharge__features-feature2-icon" alt="Plain text snippets">
+          <h3>Plain text snippets</h3>
+          <p class="paragrafo">Remove unwanted formatting from copied text for a consistent look.</p>
+        </div>
 
-    Quick preview of all snippets on your Clipboard for easy access.
+        <!-- Flexbox 3-->
+        <div class="supercharge__features-feature3">
+          <img class="supercharge__features-feature2-icon" alt="Sneak preview">
+          <h3>Sneak preview</h3>
+          <p class="paragrafo">Quick preview of all snippets on your Clipboard for easy access.</p>
+        </div>
 
-    Clipboard for iOS and Mac OS
+      </div>
 
-    Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
-    and you’re ready to start adding to your clipboard.
+    </section>
 
-    Download for iOS
-    Download for Mac
+    <!----------------    CLIPBOARD-IOS    ------------------>
 
-    FAQs
-    Contact Us
-    Privacy Policy
-    Press Kit
-    Install Guide
+    <section class="seccion clipboard-ios">
+
+      <header>
+        <h2>Clipboard for iOS and Mac OS</h2>
+      </header>
+
+      <p class="paragrafo">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
+
+      <!-- Esto será un flexbox para poner en horizontal ambos botones, idéntico al de la primera sección (cabecera) -->
+      <div class="botonera-descarga">
+        <button class="boton download-ios">Download for iOS</button>
+        <button class="boton download-mac">Download for Mac</button>
+      </div>
+    </section>
+
+    <!----------------    MENU    ------------------>
+
+    <nav class="menu-pie">
+      <ul>
+        <li>FAQs</li>
+        <li>Contact Us</li>
+        <li>Privacy Policy</li>
+        <li>Press Kit</li>
+        <li>Install Guide</li>
+      </ul>
+    </nav>
+
   </main>
+
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+
 </body>
 </html>

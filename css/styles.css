@@ -15,12 +15,38 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
-    width: 100%;
+    width: 90%;
     background-image: url("../images/bg-header-desktop.png");
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+h1,
+h2,
+h3 {
+    color: var(--dark-grayish-blue);
+}
+h1 {
+
+}
+h2 {
+
+}
+h3 {
+
+}
+.paragrafo {
+    color: var(--grayish-blue);
+}
+
+
+
+
+.cabecera {
+
+}
+
 
 
 
