@@ -5,7 +5,7 @@
     --strong-cyan-shadow-active: hsl(171, 65%, 29%);
     --strong-cyan-shadow: hsl(171, 65%, 22%);
     --light-blue-active: hsl(233, 100%, 69%);   
-    --light-blue: hsl(233, 87%, 62%);
+    --light-blue: hsl(233, 73%, 58%);
     --light-blue-shadow-active: hsl(233, 45%, 43%);   
     --light-blue-shadow: hsl(233, 43%, 35%); 
     --dark-grayish-blue: hsl(210, 10%, 33%);
@@ -37,6 +37,7 @@ h1,
 h2,
 h3 {
     color: var(--dark-grayish-blue);
+    margin-bottom: 10px;
 }
 h1 {
     font-size: 2em;
@@ -45,7 +46,7 @@ h2 {
     font-size: 1.5em;
 }
 
-.paragrafo {
+.parrafo {
     color: var(--grayish-blue);
     font-size: .9em;
     line-height: 1.7em;
@@ -71,7 +72,9 @@ h2 {
 /* -------------   SECCION CABECERA    ----------- */
 
 .logo-cabecera {
-    height: 60%;
+    height: 75px;
+    width: 75px;
+    margin-bottom: 30px;
 }
 .p-cabecera {
     width: 70%;
@@ -81,8 +84,10 @@ h2 {
 
 /* -------------   SECCION KEEP-TRACK    ----------- */
 
-.p-keep-track {
-    width: 50%;
+.p-keep-track,
+.p-access-clipboard,
+.p-supercharge {
+    width: 65%;
     margin-top: 20px;
     margin-bottom: 30px;
 }
@@ -112,8 +117,42 @@ h2 {
 .keep-track__cloud-features-feature {
     margin-bottom: 40px;
 }
-.keep-track__cloud-features-feature h3 {
-    margin-bottom: 10px;
+
+/* ----------   SECCION ACCESS-CLIPBOARD   -----------*/
+
+.access-clipboard__image {
+    width: 75%;
+    margin-top: 30px;
+}
+
+/* ----------   SECCION SUPERCHARGE   -----------*/
+
+.supercharge__features,
+.supercharge__corporate-logos {
+    display: grid;
+    grid-template-rows: 1fr;
+    margin-top: 20px;
+}
+.supercharge__features-icono {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.supercharge__features {
+    grid-template-columns: repeat(3, 1fr);
+}
+.supercharge__corporate-logos {
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+}
+.supercharge__corporate-logos img {
+    width: 100px;
+
 }
 
 /* -------------   BOTONERA    ----------- */

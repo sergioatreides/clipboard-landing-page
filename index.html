@@ -14,7 +14,7 @@
 
   <main class="contenedor">
 
-    <!----------------    CABECERA    ------------------>
+    <!----------------    1. CABECERA    ------------------>
     
     <section class="seccion cabecera">
       
@@ -24,7 +24,7 @@
         <h1>A history of everything you copy</h1>
       </header>
 
-      <p class="paragrafo p-cabecera">Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
+      <p class="parrafo p-cabecera">Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
 
       <!-- Esto será un flexbox para poner en horizontal ambos botones -->
       <div class="botonera-descarga">
@@ -34,7 +34,7 @@
 
     </section>
 
-    <!----------------    KEEP-TRACK    ------------------>
+    <!----------------    2. KEEP-TRACK    ------------------>
 
     <section class="seccion keep-track">
 
@@ -42,7 +42,7 @@
         <h2>Keep track of your snippets</h2>
       </header>
       
-      <p class="paragrafo p-keep-track">Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
+      <p class="parrafo p-keep-track">Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
 
       <!-- Esto será un flexbox para poner en horizontal ambos divs (imagen a la izquierda y características a la derecha)-->
       <div class="keep-track__cloud">
@@ -54,15 +54,15 @@
           <!-- Esto será otro flexbox para poner en vertical las 3 características con sus tres descripciones (daría un poco igual hacerlo con grid) -->
           <div class="keep-track__cloud-features-feature">
             <h3>Quick Search</h3>
-            <p class="paragrafo">Easily search your snippets by content, category, web address, application, and more.</p>
+            <p class="parrafo">Easily search your snippets by content, category, web address, application, and more.</p>
           </div>
           <div class="keep-track__cloud-features-feature">
             <h3>iCloud Sync</h3>
-            <p class="paragrafo">Instantly saves and syncs snippets across all your devices.</p>
+            <p class="parrafo">Instantly saves and syncs snippets across all your devices.</p>
           </div>
           <div>
             <h3>Complete History</h3>
-            <p class="paragrafo">Retrieve any snippets from the first moment you started using the app.</p>
+            <p class="parrafo">Retrieve any snippets from the first moment you started using the app.</p>
           </div>
 
         </div>
@@ -71,7 +71,7 @@
 
     </section>
 
-    <!----------------    ACCESS-CLIPBOARD    ------------------>
+    <!----------------   3. ACCESS-CLIPBOARD    ----------------->
 
     <section class="seccion access-clipboard">
 
@@ -79,13 +79,13 @@
         <h2>Access Clipboard anywhere</h2>
       </header>
 
-      <p class="paragrafo">Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
+      <p class="parrafo p-access-clipboard">Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
 
       <img class="access-clipboard__image" src="images/image-devices.png" alt="Access Clipboard anywhere">
 
     </section>
 
-    <!----------------    SUPERCHARGE    ------------------>
+    <!----------------    4. SUPERCHARGE    ------------------>
 
     <section class="seccion supercharge">
       
@@ -93,37 +93,49 @@
         <h2>Supercharge your workflow</h2>
       </header>
 
-      <p class="paragrafo">We’ve got the tools to boost your productivity.</p>
+      <p class="parrafo p-supercharge">We’ve got the tools to boost your productivity.</p>
 
-      <!-- Esto será un grid horizontal de tres columnas x 1 fila para meter tres flexboxes, cada uno dentro de cada columna, y que estos muestren su contenido verticalmente-->
+      <!-- Esto será un grid horizontal de tres columnas x 1 fila -->
       <div class="supercharge__features">
 
-        <!-- Flexbox 1 -->
-        <div class="supercharge__features-feature1">
-          <img class="supercharge__features-feature1-icon" alt="Create blacklists">
+        <div class="supercharge__features-feature">
+          <div class="supercharge__features-icono">
+            <img class="supercharge__features-feature1-icon" src="images/icon-blacklist.svg" alt="Create blacklists">
+          </div>
           <h3>Create blacklists</h3>
-          Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+          <p class="parrafo">Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
         </div>
 
-        <!-- Flexbox 2 -->
-        <div class="supercharge__features-feature2">
-          <img class="supercharge__features-feature2-icon" alt="Plain text snippets">
+        <div class="supercharge__features-feature">
+          <div class="supercharge__features-icono">
+            <img class="supercharge__features-feature2-icon" src="images/icon-text.svg" alt="Plain text snippets">
+          </div>
           <h3>Plain text snippets</h3>
-          <p class="paragrafo">Remove unwanted formatting from copied text for a consistent look.</p>
+          <p class="parrafo">Remove unwanted formatting from copied text for a consistent look.</p>
         </div>
 
-        <!-- Flexbox 3-->
-        <div class="supercharge__features-feature3">
-          <img class="supercharge__features-feature2-icon" alt="Sneak preview">
+        <div class="supercharge__features-feature">
+          <div class="supercharge__features-icono">
+            <img class="supercharge__features-feature2-icon" src="images/icon-preview.svg" alt="Sneak preview">
+          </div>
           <h3>Sneak preview</h3>
-          <p class="paragrafo">Quick preview of all snippets on your Clipboard for easy access.</p>
+          <p class="parrafo">Quick preview of all snippets on your Clipboard for easy access.</p>
         </div>
 
       </div>
 
+      <!-- Esto será un grid horizontal de cinco columnas x 1 fila -->
+      <div class="supercharge__corporate-logos">
+        <img src="images/logo-google.png" alt="Google">
+        <img src="images/logo-ibm.png" alt="IBM">
+        <img src="images/logo-microsoft.png" alt="Microsoft">
+        <img src="images/logo-hp.png" alt="HP">
+        <img src="images/logo-vector-graphics.png" alt="Vector Graphics">
+      </div>
+
     </section>
 
-    <!----------------    CLIPBOARD-IOS    ------------------>
+    <!----------------    5. CLIPBOARD-IOS   ----------------->
 
     <section class="seccion clipboard-ios">
 
@@ -131,7 +143,7 @@
         <h2>Clipboard for iOS and Mac OS</h2>
       </header>
 
-      <p class="paragrafo">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
+      <p class="parrafo">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
 
       <!-- Esto será un flexbox para poner en horizontal ambos botones, idéntico al de la primera sección (cabecera) -->
       <div class="botonera-descarga">
@@ -140,7 +152,7 @@
       </div>
     </section>
 
-    <!----------------    MENU    ------------------>
+    <!----------------    6. MENU    ------------------>
 
     <nav class="menu-pie">
       <ul>
